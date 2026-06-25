@@ -1,22 +1,36 @@
-import { Fragment } from "react/jsx-runtime"
 
+
+
+import { Container } from "./components/Container"
+// import { Logo } from "./components/Logo"
+import { Menu } from "./components/Menu";
 import "./styles/global.css"
-import "./style/theme.css"
-import { Heading } from "./components/Heading"
+import "./styles/theme.css"
 
-export function App(){
-    return(
-        <Fragment>
-        <Heading/>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Magni quas, et officia consectetur deserunt impedit officiis cum culpa 
-                non. Adipisci aut doloremque laborum nemo, voluptate porro cupiditate 
-                distinctio aliquam debitis.
-            </p>   
-        </Fragment>
+export function App() {
+return (
+        <>
+            <Container>
+                <Menu />
+            </Container>
+
+            <Container>
+                <section>
+                    <p>MENU</p>
+                </section>
+            </Container>
+
+            <Container>
+                <section>
+                    <p>FORM</p>
+                </section>
+            </Container>
+
+            <Container>
+                <section>
+                    <p>FOOTER</p>
+                </section>
+            </Container>
+        </>
     )
 }
-    
- 
-
